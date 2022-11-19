@@ -1,8 +1,15 @@
-<h4>Add New Notebooks</h4>
+<h4>Edit Notebook {{notebook.title}}</h4>
 
-<form action="/add" method="POST" class="z-depth-4 f_control">
+<form action="/notebooks/edit" method="POST" class="z-depth-4 f_control">
   <div class="input-field">
-    <input type="text" id="title" name="title" class="validate" required />
+    <input
+      type="text"
+      id="title"
+      name="title"
+      class="validate"
+      required
+      value="{{notebook.title}}"
+    />
     <label for="title">Notebooks model</label>
     <span class="helper-text" data-error="Enter Notebooks Name"></span>
   </div>
@@ -14,12 +21,20 @@
       class="validate"
       min="1"
       required
+      value="{{notebook.price}}"
     />
     <label for="price">Price</label>
     <span class="helper-text" data-error="Enter Price"></span>
   </div>
   <div class="input-field">
-    <input type="text" id="img" name="img" class="validate" required />
+    <input
+      type="text"
+      id="img"
+      name="img"
+      class="validate"
+      required
+      value="{{notebook.img}}"
+    />
     <label for="img">Url Image</label>
     <span class="helper-text" data-error="Enter URL Image"></span>
   </div>
@@ -29,9 +44,10 @@
       name="descr"
       class="materialize-textarea"
       required
-    ></textarea>
+    >{{notebook.descr}}</textarea>
     <label for="descr">Description</label>
     <span class="helper-text" data-error="Enter Description"></span>
   </div>
-  <button class="btn btn-primary f_control_btn">Add Notebooks</button>
+  <input type="hidden" name="id" value="{{notebook.id}}">
+  <button class="btn btn-primary f_control_btn">Edit Notebook</button>
 </form>

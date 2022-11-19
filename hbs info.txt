@@ -1,0 +1,16 @@
+1. layout faylida ma'lumotlar qay tartibda joylashishini ko'rsatadi
+qaysi layoutni ishlatishni quyidagi usulda belgilanadi
+
+router.get("/:id", async (req, res) => {
+  const notebook = await Notebook.getById(req.params.id);
+  res.render("notebook", {
+    layout: "detail",
+    notebook,
+  });
+});
+
+Qarang! layout: "detail"
+Bunda detail nomli layout belgilangan
+
+2. partials faylida ko'p kerak bo'ladigan fayllar yoziladi
+3. qolgan fayllar esa body hisoblanadi. {{{body}}}

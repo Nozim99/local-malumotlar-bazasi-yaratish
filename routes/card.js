@@ -1,0 +1,22 @@
+const { Router } = require("express");
+const Card = require("../models/card");
+const Notebook = require("../models/notebook");
+const router = Router();
+
+router.post("/add", async (req, res) => {
+  const notebook = await Notebook.getById(req.body.id);
+  await Card.add(notebook);
+  res.redirect("/card");
+});
+
+router.get("/", async (req, res) => {
+  const card = await Card.fetch();
+  res.render("card", {
+    isCard: true,
+    title: "Basket",
+    notebooks: card.notebooks,
+    price: card.price,
+  });
+});
+
+module.exports = router;

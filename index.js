@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 5000;
 const homeRoutes = require("./routes/home");
 const notebooksRoutes = require("./routes/notebooks");
 const addRoutes = require("./routes/add");
+const cardRoutes = require("./routes/card");
 
 const hbs = exphbs.create({
   defaultLayout: "main",
@@ -24,15 +25,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // sahifani yozmasa ham bo'ladi. app.use(homeRoutes)
 app.use("/", homeRoutes);
-app.use("notebooks", notebooksRoutes);
+app.use("/notebooks", notebooksRoutes);
 app.use("/add", addRoutes);
-
-app.get("/notebooks", (req, res) => {
-  res.render("notebooks", { title: "Notebooks", isNotebooks: true });
-});
-app.get("/add", (req, res) => {
-  res.render("add", { title: "Add Notebook", isAdd: true });
-});
+app.use("/card", cardRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server has been started on port ${PORT}...`);

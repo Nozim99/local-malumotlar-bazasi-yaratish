@@ -1,1 +1,44 @@
 <h1>Notebooks</h1>
+
+{{#if notebooks.length}}
+  <div class="content_notebook">
+    {{#each notebooks}}
+      <div class="card">
+        <div class="card-image">
+          <a href="{{img}}" target="_blank" class="img-box">
+            <img src="{{img}}" title="{{title}}" alt="{{title}}" />
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title">{{title}}</span>
+          <b class="price card-box__price">{{price}}</b>
+        </div>
+        <div class="card-footer__place">
+          <div class="card-action actions">
+            <a
+              href="/notebooks/{{id}}"
+              target="_blank"
+              style="margin-right: 0;"
+              class="notebooks-info-edit"
+            >Notebooks Details</a>
+            <a
+              href="/notebooks/{{id}}/edit?allow=true"
+              style="margin-right: 0;"
+              target="_blank"
+              class="notebooks-info-edit"
+            >Edit</a>
+          </div>
+          <form action="/card/add" method="POST" class="card-form">
+            <input type="hidden" name="id" value="{{id}}" />
+            <button
+              type="submit"
+              class="btn btn-primary card-form-button"
+            >BUY</button>
+          </form>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{else}}
+  <b>Notebooks empty</b>
+{{/if}}

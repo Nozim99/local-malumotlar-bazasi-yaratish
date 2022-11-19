@@ -1,14 +1,23 @@
 [
   {
     "title": "Macbook pro 2018 15inch",
-    "price": "8700000",
+    "price": "2000",
     "img": "https://frankfurt.apollo.olxcdn.com/v1/files/qu0muavkmfea3-UZ/image;s=1000x700",
-    "id": "c28690cf-0de7-40aa-99f3-7135d2bb6e6d"
+    "descr": "Core i7 6-ядерный 2.6GHz\r\n\r\nOzu 16GB 2400 MHz DDDR4\r\n\r\nGraphik Radeon Pro 555 4GB\r\n\r\nSsd 512GB\r\n\r\nSikl 70 мартда зарядка килинган\r\n\r\nБез каробка лекин оргинал зарядчики ози билан\r\nИшлашида муаммо йок 1хафта гарантия берилади\r\nПулига арзиди жовоб ишлатиб рахмат айтасиз насиб боса",
+    "id": "deced184-d25d-442c-807d-a604eba0f5bb"
   },
   {
-    "title": "Ноутбук HP255 G8 AMD Ryzen 5 5500U 8GB DDR4/256Gb SSD 15.6\" FullHD IPS",
-    "price": "5577472",
-    "img": "https://frankfurt.apollo.olxcdn.com/v1/files/66fw6z7x36e42-UZ/image;s=1000x700",
-    "id": "d8f8ccee-9df2-42f8-8296-31c86102c2cd"
+    "title": "Macbook Pro 13\" 2022 M2 8/256",
+    "price": "1400",
+    "img": "https://frankfurt.apollo.olxcdn.com/v1/files/mcopaw1kng433-UZ/image;s=1000x700",
+    "descr": "Macbook Pro 13\" 2022\r\n\r\nПроцессор: M2 8Cpu / 10Gpu\r\nRAM: 8Gb\r\nSSD: 256Gb\r\nЦвет: Space Grey\r\n\r\nГарантия с магазина !\r\n\r\nНаш адрес: ТЦ \"Малика\" магазин Б4",
+    "id": "902ba19b-84e3-4fbf-befb-ba2cec057cb6"
+  },
+  {
+    "title": "Byone i7 16/512",
+    "price": "488",
+    "img": "https://ae04.alicdn.com/kf/S1be54c9004d0491aba2915a8a1d992daD/i7-Gaming-Laptop-12GB-16GB-RAM-Laptops-15-6-Inch-Intel-Core-i3-i5-laptop-512G.jpg_640x640.jpg",
+    "descr": "i7 Gaming Laptop 12GB 16GB RAM Laptops 15.6 Inch Intel Core i3 i5 laptop 512G SSD Fingerprint Unlock 1920x1080 Protable Computer",
+    "id": "677ab5dd-1bde-43d0-bed6-daa91bcf287c"
   }
 ]
