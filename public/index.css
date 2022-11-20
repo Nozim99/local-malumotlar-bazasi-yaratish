@@ -53,21 +53,21 @@
   text-align: center;
   margin-bottom: 6rem;
 }
-.notebook__information{
+.notebook__information {
   width: 500px;
 }
-.notebook__body{
+.notebook__body {
   display: flex;
   justify-content: space-between;
 }
-.notebook__descrtiption{
+.notebook__descrtiption {
   font-size: 1.5rem;
   color: rgb(77, 77, 77);
 }
-.notebook__price{
+.notebook__price {
   font-size: 2.5rem;
 }
-.card-action.actions{
+.card-action.actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,20 +75,30 @@
 /* .notebooks-info-edit{
   margin-right: 0;
 } */
-.card-form-button{
+.card-form-button {
   width: 100%;
 }
-.card{
+.card {
   position: relative;
   height: 26rem;
 }
-.card-footer__place{
+.card-footer__place {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.card-box__price{
+.card-box__price {
   position: absolute;
   right: 1rem;
   bottom: 6.4rem;
+}
+.basket-empy__page {
+  text-align: center;
+  margin-top: 5rem;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.466);
+  border-radius: 1rem;
+  padding: 1rem 0 2rem;
+}
+.mt-1{
+  margin-top: 1rem;
 }

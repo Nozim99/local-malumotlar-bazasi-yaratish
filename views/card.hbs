@@ -1,1 +1,49 @@
 <h4>Basket</h4>
+
+<div id="card">
+  {{#if notebooks.length}}
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each notebooks}}
+          <tr>
+            <td>{{title}}</td>
+            <td>{{count}}</td>
+            <td>
+              <button
+                class="btn btn-small js-remove"
+                {{! quyidagi |    datasetga id: ID   | ko'rinishida bo'ladi }}
+                {{! id nomi ID berilgan id raqami }}
+                data-id="{{id}}"
+              >Delete</button>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <p><b>Total Price: </b>
+      <span class="price">{{price}}</span></p>
+  {{else}}
+    <div class="basket-empy__page">
+                <img
+                  src="https://i.imgur.com/dCdflKN.png"
+                  width="130"
+                  height="130"
+                  class="img-fluid mb-4 mr-3"
+                />
+                <h3><strong>Your Cart is Empty</strong></h3>
+                <h4>Add something to make me happy :)</h4>
+                <a
+                  href="/notebooks"
+                  class="btn btn-primary mt-1"
+                  data-abc="true"
+                >continue shopping</a>
+              </div>
+  {{/if}}
+</div>
